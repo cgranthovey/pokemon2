@@ -20,9 +20,13 @@
 		A18966A51D01E0B9005E3DC8 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A18966A41D01E0B9005E3DC8 /* music.mp3 */; };
 		A18966A71D01ED4A005E3DC8 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18966A61D01ED4A005E3DC8 /* PokemonDetailVC.swift */; };
 		A18966AA1D01F550005E3DC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18966A81D01F550005E3DC8 /* Main.storyboard */; };
+		A1C905491D0233D900AC4F15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C905481D0233D900AC4F15 /* Constants.swift */; };
+		CA980EF48D8C3EEDCF4A7C81 /* Pods_pokemonTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2003AEB5EBE7DFF351E4F82C /* Pods_pokemonTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2003AEB5EBE7DFF351E4F82C /* Pods_pokemonTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokemonTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29776669E4CF80F23367F6CE /* Pods-pokemonTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemonTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokemonTwo/Pods-pokemonTwo.release.xcconfig"; sourceTree = "<group>"; };
 		A127ADB91D00DA9D00DA16DD /* pokemonTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokemonTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A127ADBC1D00DA9D00DA16DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A127ADBE1D00DA9D00DA16DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		A18966A41D01E0B9005E3DC8 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		A18966A61D01ED4A005E3DC8 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		A18966A91D01F550005E3DC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C905481D0233D900AC4F15 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA4AD682AB762E129D5557E1 /* Pods-pokemonTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemonTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokemonTwo/Pods-pokemonTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA980EF48D8C3EEDCF4A7C81 /* Pods_pokemonTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7E714826F66FE7E29AEEA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA4AD682AB762E129D5557E1 /* Pods-pokemonTwo.debug.xcconfig */,
+				29776669E4CF80F23367F6CE /* Pods-pokemonTwo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39EB37E5F5ECDC762E6F0BF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2003AEB5EBE7DFF351E4F82C /* Pods_pokemonTwo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A127ADB01D00DA9D00DA16DD = {
 			isa = PBXGroup;
 			children = (
 				A127ADBB1D00DA9D00DA16DD /* pokemonTwo */,
 				A127ADBA1D00DA9D00DA16DD /* Products */,
+				1D7E714826F66FE7E29AEEA2 /* Pods */,
+				39EB37E5F5ECDC762E6F0BF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A127ADD91D0102C000DA16DD /* csv.swift */,
+				A1C905481D0233D900AC4F15 /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A127ADCE1D00DA9D00DA16DD /* Build configuration list for PBXNativeTarget "pokemonTwo" */;
 			buildPhases = (
+				58EDE0C32D055D8EF6144065 /* Check Pods Manifest.lock */,
 				A127ADB51D00DA9D00DA16DD /* Sources */,
 				A127ADB61D00DA9D00DA16DD /* Frameworks */,
 				A127ADB71D00DA9D00DA16DD /* Resources */,
+				B8A6A40FCEE8B5150F2B6BE6 /* Embed Pods Frameworks */,
+				4DA017EEC3ED06989BC63FAB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +227,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DA017EEC3ED06989BC63FAB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokemonTwo/Pods-pokemonTwo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58EDE0C32D055D8EF6144065 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A6A40FCEE8B5150F2B6BE6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokemonTwo/Pods-pokemonTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A127ADB51D00DA9D00DA16DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,6 +287,7 @@
 				A18966A71D01ED4A005E3DC8 /* PokemonDetailVC.swift in Sources */,
 				A127ADBD1D00DA9D00DA16DD /* AppDelegate.swift in Sources */,
 				A127ADD71D00F2D500DA16DD /* PokeCell.swift in Sources */,
+				A1C905491D0233D900AC4F15 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +398,7 @@
 		};
 		A127ADCF1D00DA9D00DA16DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4AD682AB762E129D5557E1 /* Pods-pokemonTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pokemonTwo/Info.plist;
@@ -330,6 +410,7 @@
 		};
 		A127ADD01D00DA9D00DA16DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29776669E4CF80F23367F6CE /* Pods-pokemonTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pokemonTwo/Info.plist;
